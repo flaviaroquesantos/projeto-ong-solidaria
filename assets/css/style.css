@@ -1,0 +1,178 @@
+/* ======================================= */
+/* 1. RESET E ESTILOS GLOBAIS (Mobile-First) */
+/* ======================================= */
+* {
+    /* Reset básico: remove margens e paddings padrão */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Variáveis CSS para gerenciamento de Design System (Requisito) */
+    --cor-principal: #007bff; /* Azul (Header, Links) */
+    --cor-secundaria: #28a745; /* Verde (Botões, Doação) */
+    --cor-fundo-claro: #f8f9fa; /* Fundo de seção */
+    --cor-texto-principal: #343a40; 
+    --cor-texto-claro: #ffffff; 
+    --fonte-principal: 'Arial', sans-serif;
+    --espacamento-padrao: 1.5rem; /* 24px */
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto-principal);
+    background-color: var(--cor-fundo-claro);
+    line-height: 1.6;
+    /* Define o layout inicial para mobile: uma coluna */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1; /* Garante que o conteúdo principal ocupe o espaço */
+    padding: var(--espacamento-padrao) 0;
+}
+
+section, footer {
+    padding: var(--espacamento-padrao);
+}
+
+/* Requisito de Acessibilidade: Contraste Adequado e Hierarquia */
+h1, h2, h3, h4 {
+    color: var(--cor-principal);
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+
+/* Estilo para links (acessibilidade) */
+a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--cor-secundaria);
+}
+
+/* ======================================= */
+/* 2. ESTILOS DE ELEMENTOS COMUNS */
+/* ======================================= */
+
+/* Botões (Call-to-Action) */
+.cta-button {
+    display: block;
+    width: 100%; /* Largura total em mobile */
+    padding: 0.75rem;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claro);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1e7e34;
+    text-decoration: none;
+}
+
+/* Imagens (Requisito: Mídias Adaptáveis) */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; 
+}
+
+/* ======================================= */
+/* 3. ESTRUTURAS DE NAVEGAÇÃO E RODAPÉ */
+/* ======================================= */
+
+header {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-claro);
+    padding: 0.5rem var(--espacamento-padrao);
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-nav img {
+    max-width: 80px; 
+    margin-bottom: 0.5rem;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Links em coluna em mobile */
+    width: 100%;
+}
+
+.main-nav li {
+    padding: 0.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav li a {
+    color: var(--cor-texto-claro);
+    display: block;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: var(--cor-texto-principal);
+    color: var(--cor-fundo-claro);
+    text-align: center;
+    padding: var(--espacamento-padrao);
+}
+
+/* ======================================= */
+/* 4. ESTILOS DE FORMULÁRIO (cadastro.html) */
+/* ======================================= */
+
+.formulario-cadastro {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.formulario-cadastro fieldset {
+    border: 1px solid #ddd;
+    padding: var(--espacamento-padrao);
+    margin-bottom: var(--espacamento-padrao);
+    border-radius: 8px;
+    background-color: white;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Validação HTML5 e Acessibilidade */
+input:required:invalid {
+    border-color: red; /* Feedback visual para campos obrigatórios não preenchidos */
+}

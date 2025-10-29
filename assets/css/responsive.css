@@ -1,0 +1,85 @@
+/* ======================================= */
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+/* ======================================= */
+
+/* -------------------------------------- */
+/* 1. Breakpoint para TABLETS (min-width: 600px) */
+/* -------------------------------------- */
+@media (min-width: 600px) {
+    /* Ajuste no padding geral */
+    section, footer {
+        padding: var(--espacamento-padrao) 2rem;
+    }
+
+    /* Menu de Navegação (Agora alinhado na horizontal) */
+    .main-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .main-nav li {
+        border-top: none;
+        margin-left: 1rem;
+        padding: 0;
+    }
+    
+    .main-nav img {
+        margin-bottom: 0;
+    }
+
+    /* Formulário: Campos em duas colunas (para melhor aproveitamento do espaço) */
+    .formulario-cadastro fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Botões de CTA não ocupam a largura total em tablets/desktop */
+    .cta-button {
+        width: auto;
+        display: inline-block;
+        padding: 0.75rem 2rem;
+    }
+
+    /* index.html - Missão, Visão e Valores (Layout em 3 colunas) */
+    .institucional-mvv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2rem;
+    }
+}
+
+
+/* -------------------------------------- */
+/* 2. Breakpoint para DESKTOPS (min-width: 1024px) */
+/* -------------------------------------- */
+@media (min-width: 1024px) {
+    /* Centraliza o conteúdo e limita a largura para leitura confortável */
+    body {
+        max-width: 1200px;
+        margin: 0 auto; 
+        box-shadow: 0 0 15px rgba(0,0,0,0.1); 
+    }
+    
+    /* projetos.html - Layout de Projetos (2 colunas para conteúdo e barra lateral) */
+    .project-list {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* 2/3 para projetos, 1/3 para a barra lateral */
+        gap: 2rem;
+        align-items: start; /* Alinha o topo do conteúdo */
+    }
+    
+    /* A barra lateral de Categorias (aside) */
+    .categorias-projeto {
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: white;
+    }
+}

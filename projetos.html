@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos e Como Ajudar | [Nome da ONG]</title>
+    <meta name="description" content="Conheça nossos projetos sociais, descubra oportunidades de voluntariado e saiba como realizar doações online para a [Nome da ONG].">
+    
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="assets/css/responsive.css"> 
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <img src="assets/img/logo.png" alt="Logo da ONG - Voltar para o início">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos & Apoie</a></li>
+                <li><a href="cadastro.html">Seja Voluntário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Nossas Iniciativas e Formas de Apoio</h1>
+        </section>
+
+        <section id="projetos-sociais" class="project-list">
+            <h2>Nossos Projetos Atuais em Destaque</h2>
+            
+            <article class="projeto-item">
+                <h3>Escola de Habilidades Digitais (EHD)</h3>
+                <p>Capacitação profissional de jovens de baixa renda em programação e design.</p>
+                <div class="indicadores">
+                    <p>🎓 **Alunos Impactados:** 150</p>
+                    <p>📈 **Meta de Arrecadação:** 85% Concluída</p>
+                </div>
+                <figure>
+                    <img src="assets/img/projeto_ehd.jpg" alt="Jovens aprendendo programação em laboratório">
+                    <figcaption>Alunos do Projeto EHD durante a aula prática.</figcaption>
+                </figure>
+                <a href="#">Ver Detalhes do Projeto</a>
+            </article>
+
+            <article class="projeto-item">
+                <h3>Alimentação Consciente</h3>
+                <p>Distribuição de cestas básicas e oficinas de nutrição para famílias carentes.</p>
+                <div class="indicadores">
+                    <p>🍎 **Famílias Apoiadas:** 520</p>
+                    <p>💰 **Fundo Disponível:** R$ 12.000</p>
+                </div>
+            </article>
+            
+            <aside class="categorias-projeto">
+                <h3>Filtrar por Categoria</h3>
+                <ul>
+                    <li>Educação (3)</li>
+                    <li>Saúde (1)</li>
+                    <li>Meio Ambiente (2)</li>
+                </ul>
+            </aside>
+        </section>
+
+        <hr> 
+
+        <section id="voluntariado" class="oportunidades-voluntario">
+            <h2>Portal de Oportunidades de Voluntariado</h2>
+            <p>Seja a força motriz de nossos projetos. Encontre uma oportunidade que combine com seu tempo e talento!</p>
+            
+            <div class="oportunidade-item">
+                <h4>Monitor de Programação (Remoto)</h4>
+                <p>Requisito: Conhecimento básico em HTML/CSS. Duração: 5h/semana.</p>
+                <a href="cadastro.html?perfil=voluntario" class="cta-button">Candidatar-se Agora</a> 
+            </div>
+            
+            <div class="oportunidade-item">
+                <h4>Apoio Administrativo (Presencial)</h4>
+                <p>Requisito: Organização e informática básica. Duração: 2h/semana.</p>
+                <a href="cadastro.html?perfil=voluntario" class="cta-button">Candidatar-se Agora</a>
+            </div>
+            
+            <p class="area-voluntario-link">Já é voluntário? <a href="#">Acesse sua Área de Histórico.</a></p>
+        </section>
+        
+        <hr> 
+
+        <section id="doacoes" class="captacao-recursos">
+            <h2>Apoie Nossa Causa com uma Doação</h2>
+            <p>Sua contribuição garante a continuidade de nossas oficinas e o impacto positivo.</p>
+            
+            <form action="#" method="POST" class="form-doacao">
+                <div class="metas-progresso">
+                    <p>Campanha de Inverno: **R$ 15.000 arrecadados** de R$ 20.000.</p>
+                    <progress value="15000" max="20000">75%</progress> 
+                </div>
+                
+                <fieldset class="opcoes-doacao">
+                    <legend>Escolha um Valor de Doação:</legend>
+                    <div class="opcoes-valor">
+                        <input type="radio" id="doar50" name="valor" value="50" checked>
+                        <label for="doar50">R$ 50</label>
+                        
+                        <input type="radio" id="doar100" name="valor" value="100">
+                        <label for="doar100">R$ 100</label>
+
+                        <input type="radio" id="doaroutros" name="valor" value="outro">
+                        <label for="doaroutros">Outro Valor</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="cta-button">Doar Agora (Simulação)</button>
+            </form>
+
+            <p class="transparencia-doacao">Leia nosso <a href="#">Relatório de Prestação de Contas</a> (Requisito de Transparência).</p>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>Contato: (99) 99999-9999 | Email: contato@ong.org</p>
+            <p>&copy; 2025 [Nome da ONG]. Todos os direitos reservados.</p>
+        </address>
+    </footer>
+</body>
+</html>
