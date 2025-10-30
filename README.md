@@ -51,6 +51,3 @@ Falha de Build: O GitHub Actions gerou um erro crítico de build (o "X" vermelho
 Impacto no Site: Mesmo após a limpeza do Git local, esta falha de build persiste no servidor, impedindo que o GitHub Pages encontre os arquivos estáticos (CSS e Imagens), resultando em erros 404 (Not Found) no console.
 
 Conclusão: O código (HTML, CSS, JS) está completo e funcional e deve ser avaliado com base nos arquivos no repositório. O problema de exibição no link público é uma falha de infraestrutura do GitHub Pages.
-
-🔗 Link do Repositório
-https://docs.github.com/pt/repositories/creating-and-managing-repositories/quickstart-for-repositories
