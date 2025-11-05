@@ -1,7 +1,3 @@
-Entendido. Como o projeto está finalizado e pronto para entrega, vou criar um arquivo README.md que resume o projeto, destaca os pontos fortes do código e explica a falha de publicação no GitHub Pages.
-
-Este README é crucial para a avaliação, pois mostra o profissionalismo e o conhecimento técnico na identificação de problemas de deploy.
-
 📄 README.md: Projeto ONG Solidária
 🌟 Nome do Projeto
 Impacta+ | ONG Solidária
